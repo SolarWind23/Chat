@@ -1,0 +1,105 @@
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+ul{
+    list-style-type: none; margin: 0; padding: 0;
+}
+body { font: 13px Helvetica, Arial; }
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+h3{
+    display: block;
+    color: whitesmoke;
+}
+.login{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: black;
+    display: flex;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.login-form{
+    width: 50%;
+    margin: 0 auto;
+}
+.username, .username:focus {
+    outline: none;
+    width: 100%;
+    background: black;
+    color: white;
+    font-size: 25px;
+    line-height: 50px;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    border-bottom: 2px solid white;
+}
+
+.authorized {
+    display: none;
+}
+
+.changeRoom {
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.changeRoom:hover{
+    color: darkblue;
+}
+
+.user-name{
+    margin-left: 15px;
+}
+
+.nav-wrapper .sidenav-trigger {
+    display: block;
+}
+.nav-wrapper .brand-logo {
+    position: static;
+}
+.chat-container .row {
+    margin-bottom: 0;
+}
+.chat-room {
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+}
+.chat-room .message-form {
+    margin-top: auto;
+}
+.chat-room .message-container {
+    flex-grow: 1;
+    min-height: 50%;
+    overflow-y: auto;
+}
+
+.message-form .row {
+    margin-bottom: 0;
+}
+.users-list-wrapper {
+    height: calc(100vh - 60px);
+    overflow-y: auto;
+    box-shadow: -11px 0 19px rgba(0, 0, 0, .05);
+}
+.message {
+    overflow: hidden;
+}
+.message.from .card {
+    float: right;
+}
+.message.to .card {
+    float: left;
+    background-color: #00897b ;
+}

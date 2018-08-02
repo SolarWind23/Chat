@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+    <div class="login">
+        <h3>Eter user name</h3>
+        <form action="" class="login-form" name="login-form">
+            <input autofocus type="text" name="username" class="username" autocomplete="off">
+        </form>
+    </div>
+
+    <div class="authorized">
+        <nav>
+            <div class="row">
+                <div class="col s12">
+                    <div class="nav-wrapper">
+                        <div class="open-nav left">
+                            <a href="#" class="brand-logo left">Chat</a>
+                        </div>
+                        <ul id="nav-mobile" class="right hide-on-med-and-down">
+                            <li><i class="large material-icons">account_circle</i></li>
+                            <li class="user-name"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="chat-container">
+            <div class="row">
+                <div class="col m9">
+                    <div class="chat-room">
+                        <div class="message-container">
+                        </div>
+                        <div class="message-form">
+                            <form name="send-message">
+                                <div class="row">
+                                    <div class="input-field col xl12">
+                                        <i class="material-icons prefix">mode_edit</i>
+                                        <input type="text" id="message" name="message">
+                                        <label for="message">Message</label>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col xl3 ">
+                    <div class="users-list-wrapper">
+                        <div class="col s12"><h6>Users</h6></div>
+                        <ul class="collection users-list"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="/js/materialize.min.js"></script>
+    <script src="/js/bundle.js"></script>
+</body>
+</html>
